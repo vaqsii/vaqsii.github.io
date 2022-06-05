@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+    crossorigin="anonymous"
+  />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="burger.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="toggle-btn">
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="links-container">
+          <li class="links-item">
+            <a href="#home" class="link active">Home</a>
+          </li>
+          <li class="links-item">
+            <a href="#burger-section" class="link">gallery</a>
+          </li>
+          <li class="links-item">
+            <a href="#prodetails" class="link">Order</a>
+          </li>
+          
+        </ul>
+      </nav>
+     
+
+      <section class="best-burgers" id="home">
+          <div class="burger-content">
+              <h1 class="burger-heading">Best <span class="tast">Burgers</span></h1>
+              <p class="cola">it's tasty with coca-cola</p>
+              <a href="#buy-section" class="btn" onclick="window.location.href='#prodetails' ">Order</a>
+          </div>
+      </section>
+
+      <section class="project" id="burger-section">
+        <h2 class="heading">Fast<span class="highlight">Food</span></h2>
+        
+        <div class="seperator"></div>
+
+        <div class="filters">
+          <button class="filter-btn active" id="all">all</button>
+          <button class="filter-btn" id="burrgers">burgers</button>
+          <button class="filter-btn" id="hotdogs">hotdogs</button>
+          <button class="filter-btn" id="pizza">pizza</button>
+        </div>
+
+        <div class="project-container">
+            <!-- <div class="project-card">
+                <img src="img/project (1).png" alt="">
+                <div class="content">
+                    <h1 class="project-name">project one</h1>
+                    <span class="tags">#javascript</span>
+                </div>
+            </div> -->
+        </div>
+      </section>
+      <section id="prodetails" class="burger-p1">
+        <div class="burger-image">
+            <img src="img/burger12.jpg" width="100%" id="MainImg" alt="">
+           
+        </div>
+        <div class="burger-details">
+            
+          <h2>Best burger</h2>
+          <h2 class="price">15$</h2>
+          <select >
+              <option class="option">Exstra</option>
+              <option class="option">Cheese-2$</option>
+              <option class="option">Meat-3$</option>
+              <option class="option">Fries-1.5$</option>
+              <option class="option">Fries-1$</option>
+          </select>
+          <input
+              type="text"
+              class="address1"
+              autocomplete="off"
+              id="adress"
+              placeholder="Your adress"
+            />
+            <input
+              type="number"
+              autocomplete="off"
+              id="numb"
+              class="number"
+              placeholder="number"
+            />
+            
+            <div class="order-btn">
+              <h3>Order</h3>
+              <button class="buttn"></button>
+            </div>
+            <div class="ratings ">
+              <img src="img/fill star.png" class="star" alt="" />
+              <img src="img/fill star.png" class="star" alt="" />
+              <img src="img/fill star.png" class="star" alt="" />
+              <img src="img/fill star.png" class="star" alt="" />
+              <img src="img/no fill star.png" class="star" alt="" />
+              
+            </div>
+            
+           
+        </div>
+       </section>
+
+    <footer >
+      <div class="col">
+       <div class="follow">
+    <h4 class="foll">Follow Me </h4>
+    <div class="icon">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-youtube"></i>
+ 
+    </div>
+    </div>
+    </div>
+    </footer>
+    <script src="gallery.js"></script>
+    <script src="javascript.js"></script>
+    
+</body>
+</html>
+
+
